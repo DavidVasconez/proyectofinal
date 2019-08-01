@@ -1,0 +1,161 @@
+body{
+  background-color: #02010a;
+    font-family: 'Dancing Script', cursive;
+}
+@keyframes header-animation {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+header{
+  animation-name: header-animation;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay:0s;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-flow:row wrap;
+}
+a {
+  text-decoration: none;
+}
+.imagen{
+    background-color: #82c3a6;
+}
+.c2{
+  background-color: #d5c75f;
+  display: flex;
+}
+.foot{
+  background-color: #C6d5c5;
+  text-align: center;
+  border-radius: 0 0px 10px 10px;
+}
+.dave{
+  transition: box-shadow 1s;
+  transition: transform 1s;
+}
+.dave:hover{
+  box-shadow: 2px 2px #82c3a6;
+  transform: rotate(10deg);
+}
+.dave2{
+    transition: box-shadow 1s;
+    transition: transform 1s;
+}
+.dave2:hover{
+  transform: translate(5px,-20px);
+  box-shadow: 2px 2px #82c3a6;
+}
+@media(min-width: 900px){
+h1{
+  flex-grow: 3;
+}
+a{
+  flex-direction: row;
+  flex-grow: 1;
+}
+.content{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.one{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%
+}
+.dave{
+  border: 1px solid black;
+  width: 40%;
+  margin: 5%;
+}
+.dave2{
+  border: 1px solid black;
+  width: 40%;
+    margin: 5%;
+}
+.c2{
+  display: flex;
+  flex-direction: row;
+}
+.foot{
+  display: flex;
+  flex-flow: row;
+}
+.contacto{
+  width: 25%;
+  padding-left: 10px;
+}
+.network{
+  width: 25%;
+}
+.terminos{
+  width: 25%;
+  padding: 5px;
+}
+.derechos{
+  width: 25%;
+  padding: 5px;
+}
+}
+@media (max-width: 899px) {
+  body{
+    display: flex;
+    flex-flow: column;
+  }
+  header{
+    text-align: center;
+  }
+  .image{
+    width: 100%;
+  }
+  .one{
+    width: 90%;
+    margin-left:5%;
+    margin-right: 5%;
+  }
+ #Titulo{
+   width: 100%;
+ }
+ #home{
+   width: 33%;
+ }
+ #face{
+   width: 33%;
+ }
+ #tree{
+   width: 33%;
+ }
+ .c2{
+   width: 100%;
+   display: flex;
+   flex-flow: column;
+ }
+ .dave{
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 10px;
+
+ }
+ .dave2{
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+}
